@@ -1,0 +1,140 @@
+body {
+  background: #fff;
+  font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
+  font-size: 11px;
+  color: #333;
+  margin: 0px;
+  padding: 0px;
+  text-align: left;
+  direction: ltr;
+  unicode-bidi: embed;
+}
+
+h2, h3 {
+  font-size: 13px;
+  color: #333;
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  cursor: pointer;
+  color: #2974d6;
+  -moz-outline-style: none;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  border: 0px;
+}
+
+td,
+td.label {
+  font-size: 11px;
+  text-align: left;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  font-size: 0;
+  height: 0;
+  line-height: 0;
+  visibility: hidden;
+}
+
+.clearfix {
+  display: block;
+}
+
+.ie6 .clearfix,
+.ie7 .clearfix,
+.ie8 .clearfix {
+  zoom: 1;
+}
+
+#menubar_container {
+  background-color: #2974d6;
+  margin: 0;
+  padding: .7em 0 0 0;
+  position: relative;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.titlebar {
+  padding: 10px 10px 12px;
+}
+
+.events_header {
+  background-image: url(http://b.static.ak.fbcdn.net/rsrc.php/z7KX9/hash/dqzv8mc1.gif);
+  background-position: left 8px;
+  background-repeat: no-repeat;
+  float: left;
+  font-size: 14px;
+  padding: 7px 0 7px 24px;
+}
+
+.content {
+  width: 970px;
+  margin: 0 auto;
+}
+
+.menubar_content {
+  position: relative;
+  margin: 0 auto;
+}
+
+.menubar_title {
+  float:left;
+}
+
+.login_button_holder {
+  float:right;
+}
+
+.profile_pic_button_holder {
+  position:absolute;
+  right:0px;
+  top:-0.6em;
+}
+
+.hidden_elem {
+  display: none;
+}
+
+.attendees_content {
+  height:200px;
+  overflow:auto;
+}
+
+.column1 {
+  width: 760px;
+  float: left;
+}
+
+.column2 {
+  width: 210px;
+  float: left;
+}
+
+.widget_holder {
+  margin: 50px 0 0 10px;
+}
+
+.fan_holder {
+  margin-top: 10px;
+}

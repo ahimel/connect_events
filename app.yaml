@@ -1,0 +1,21 @@
+application: lewebconnect
+version: 1
+runtime: python
+api_version: 1
+
+handlers:
+- url: /css
+  static_dir: css
+- url: /images
+  static_dir: images
+- url: /js
+  static_dir: js
+- url: /add_event
+  script: add_event.py
+- url: /get_attendees
+  script: get_attendees.py
+- url: /remote_api
+  script: $PYTHON_LIB/google/appengine/ext/remote_api/handler.py
+  login: admin
+- url: /.*
+  script: main.py

@@ -1,0 +1,62 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd" xmlns:fb="http://www.facebook.com/2008/fbml">
+<html>
+<head>
+  <title>{{ site_name }}</title> 
+  <meta name="title" content="Le Web Connect" /> 
+  <meta name="description" content="Le Web Connect" /> 
+  <link rel="image_src" href="http://www.lewebconnect.com/images/fb_logo_share.png" /> 
+  
+  <link rel="stylesheet" type="text/css" href="/css/tabs.css"> 
+  <link rel="stylesheet" type="text/css" href="/css/party.css"> 
+  <link rel="stylesheet" type="text/css" href="/css/styles.css"> 
+</head>
+<body{{ body_class }}>
+  <script src="js/events.js" type="text/javascript"></script>
+  <script src="http://static.ak.connect.facebook.com/js/api_lib/v0.4/FeatureLoader.js.php/en_US" type="text/javascript"></script>
+  <script type="text/javascript">
+    FB.init("25e1c62dd62d4b7e91c7d49f4f6a7205");
+  </script>
+
+  <div id="menubar_container">
+    <div class="content menubar_content clearfix">
+      <div class="menubar_title">{{ site_name }}</div>
+      <div id="login_button_holder" class="login_button_holder">
+        {% if profile_pic %}
+          <img src="{{ profile_pic}} ">
+        {% else %}
+          <<fb:login-button v="2" size="medium" onlogin="window.location.reload(true);">Connect</fb:login-button>
+        {% endif %} 
+      </div>
+    </div>
+  </div>
+  <div class="content clearfix">
+    <div class="column1">
+      <div class="titlebar clearfix">
+        <h2 class="events_header">Events</h2>
+      </div>
+      <div class="tabs clearfix">
+        <center>
+          <div class="left_tabs">
+            <div>
+              <ul id="toggle_tabs_unused" class="toggle_tabs">
+                {{ tabs_content }}
+              </ul>
+            </div>
+          </div>
+        </center>
+      </div>
+      <div id="partylist">
+        {{ events_content }}
+      </div>
+    </div>
+    <div class="column2">
+      <div class="widget_holder">
+        <fb:share-button class="url" href="http://www.LeWebConnect.com" type="button_count"></fb:share-button>
+        <div class="fan_holder">
+           <fb:fan profile_id="91870748988" stream="1" connections="6" width="200"></fb:fan><div style="font-size:8px; padding-left:10px"><a href="http://www.lewebconnect.com">LeWebConnect</a> on Facebook</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,86 @@
+#partylist {
+  padding: 1px 0px 10px;
+}
+
+#partylist .partyrow {
+  background: white;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+#partylist table {
+  background: white;
+  border-bottom: none;
+  font-size: 11px;
+}
+
+#partylist .tunaimage {
+  vertical-align: top;
+  text-align: left;
+  width: 55px;
+}
+
+#partylist .info {
+  vertical-align: top;
+  width: 385px;
+}
+
+#partylist .actions {
+  vertical-align: top;
+  width: 100px;
+}
+
+#partylist .actions a {
+  display: block;
+  margin: 0px;
+  padding: 2px 4px;
+  border-bottom: solid 1px #D8DFEA;
+}
+
+#partylist .actions a:hover {
+  color: white;
+  background: #2974d6;
+  text-decoration: none;
+}
+
+#partylist .eventtitle {
+  padding: 0 5px 10px 0;
+}
+
+#partylist .eventtitle h3 {
+  font-size: 12px;
+}
+
+#partylist .eventtitle p {
+  margin: 2px 0 0 0;
+  color: gray;
+  font-size: 9px;
+}
+
+#partylist .infotable .label {
+  color: gray;
+  width: 80px;
+  padding-bottom: 2px;
+  vertical-align: top;
+}
+
+#partylist .infotable hr {
+  border: none 0;
+  border-top: 1px solid #d8dfea;
+  width: 100%;
+  height: 1px;
+}
+
+#partylist .timeline {
+  text-align: left;
+  background: #f0f0f0;
+  border: solid 1px #ccc;
+  border-top: solid #bbb 1px;
+  border-bottom: none;
+  color: #333;
+  padding: 3px 10px;
+  font-weight: bold;
+  font-size: 11px;
+  margin: 10px 0 0 0;
+}
